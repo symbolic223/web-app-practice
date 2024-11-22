@@ -69,9 +69,6 @@ $errorMessage = isset($_GET['error']) ? $_GET['error'] : '';
     </section>
     <div class="section">
         <h2>Обратная связь</h2>
-        <?php if (!empty($successMessage)): ?>
-            <p class="success"><?= htmlspecialchars($successMessage); ?></p>
-        <?php endif; ?>
         <form action="" method="POST">
             <textarea name="feedback" rows="4" placeholder="Напишите ваш отзыв"></textarea>
             <button type="submit" class="btn-primary">Отправить</button>
