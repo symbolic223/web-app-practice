@@ -1,0 +1,48 @@
+body {
+    background-color: #047eff;
+    color: white;
+    justify-items: center;
+}
+.btn {
+    color: black;
+    text-decoration: none;
+    border:3px solid white;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.container {
+    justify-items: center;
+}
+
+.register {
+    background-color: #047eff;
+}
+
+.register button {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.register input {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.login {
+    background-color: #047eff;
+}
+
+.login button {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.login input {
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
