@@ -180,6 +180,21 @@ a {
     border-radius: 5px;
 }
 
+.dashboard {
+    border: 3px solid white;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px gray;
+    justify-items: center;
+}
+
+.dashboard a {
+    border: 3px solid #047eff;
+    background-color: #047eff;
+    color: white;
+}
+
 .project-card {
     border: 1px solid #ccc;
     border-radius: 5px;

@@ -10,8 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $userId = $_SESSION['user_id'];
-    $message = $_POST['message'];
-
+    $message = $_POST['feedback'];
+    echo $message;
     $stmt = $pdo->prepare("INSERT INTO feedback (user_id, message) VALUES (:user_id, :message)");
     $stmt->execute(['user_id' => $userId, 'message' => $message]);
 
