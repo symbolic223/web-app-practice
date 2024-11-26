@@ -16,7 +16,7 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-<div class="container">
+<div class="container-index">
     <h1>Добро пожаловать на персональную страницу</h1>
     <p>Пожалуйста, зарегистрируйтесь или войдите в систему, чтобы продолжить.</p>
     <div class="links">

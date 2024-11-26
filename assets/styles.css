@@ -7,12 +7,36 @@ body {
     color: black;
     text-decoration: none;
     border:3px solid white;
+    height: 50px;
+    width: 400px;
     background-color: white;
     border-radius: 10px;
+    text-align: center;
+    justify-items: center;
+    font: 36px "Annai MN";
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .container {
     justify-items: center;
+}
+
+.container-index {
+    justify-items: center;
+}
+
+.links {
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 100px;
 }
 
 .register {
