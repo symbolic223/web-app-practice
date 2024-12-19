@@ -213,6 +213,40 @@ a {
     justify-items: center;
 }
 
+.section {
+    justify-items: center;
+}
+
+.section-feedback {
+    justify-items: center;
+}
+
+.section-feedback textarea {
+    justify-items: center;
+    resize: none;
+    width: 250px;
+}
+
+.section-feedback button {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+}
+
+.section-projects {
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-projects p {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
 .dashboard a {
     border: 3px solid #047eff;
     background-color: #047eff;
@@ -259,9 +293,9 @@ a {
 }
 
 .login-container input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px -10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -330,9 +364,9 @@ a {
 }
 
 .auth-container input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 5px -5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -392,6 +426,3 @@ a {
     font-weight: bold;
     cursor: pointer;
 }
-
-
-

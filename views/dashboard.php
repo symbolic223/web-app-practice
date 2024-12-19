@@ -19,9 +19,6 @@ $projectsStmt = $pdo->prepare("SELECT id, title, description, created_at FROM pr
 $projectsStmt->execute(['user_id' => $userId]);
 $projects = $projectsStmt->fetchAll();
 
-
-$successMessage = isset($_GET['success']) ? $_GET['success'] : '';
-$errorMessage = isset($_GET['error']) ? $_GET['error'] : '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,19 +38,13 @@ $errorMessage = isset($_GET['error']) ? $_GET['error'] : '';
         </nav>
     </header>
     <main>
-        <?php if ($successMessage === 'bio_updated'): ?>
-            <div class="alert alert-success">Информация о себе успешно обновлена!</div>
-        <?php elseif ($errorMessage === 'bio_update_failed'): ?>
-            <div class="alert alert-danger">Ошибка при обновлении информации о себе.</div>
-        <?php endif; ?>
-
-        <section>
+        <div class = "section">
             <h2>О себе</h2>
             <p id="bio-text"><?= htmlspecialchars($user['bio']) ?: 'Вы еще не добавили информацию о себе.'; ?></p>
             <button class="btn-primary" onclick="openEditModal()">Изменить</button>
-        </section>
+        </div>
 
-        <section>
+        <div class = "section-projects">
             <h2>Ваши проекты</h2>
             <?php if (!empty($projects)): ?>
                 <?php foreach ($projects as $project): ?>
@@ -64,10 +55,11 @@ $errorMessage = isset($_GET['error']) ? $_GET['error'] : '';
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
-                <p>У вас пока нет проектов. <a href="/views/manage_projects.php">Добавьте первый проект.</a></p>
+                <p>У вас пока нет проектов.</p>
+                <a href="/views/manage_projects.php">Добавьте первый проект.</a>
             <?php endif; ?>
-        </section>
-        <div class="section">
+        </div>
+        <div class="section-feedback">
             <h2>Обратная связь</h2>
             <form action="../handlers/feedback.php" method="POST">
                 <textarea name="feedback" rows="4" placeholder="Напишите ваш отзыв"></textarea>
